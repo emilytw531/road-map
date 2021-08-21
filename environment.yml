@@ -5,7 +5,7 @@ dependencies:
   - python=3.7.6
   - pip
   - pip:
-    - matplotlib==3.4.3
+    - matplotlib==2.2.3
     - numpy==1.21.2
     - geos
     - geopandas==0.8.2

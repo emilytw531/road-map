@@ -1,8 +1,13 @@
 name: example-environment
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python
+  - matplotlib
+  - numpy
   - pip
   - pip:
+    - pyproj==3.0.1
+    - pyshp==2.1.3
     - "git+https://github.com/matplotlib/basemap.git"

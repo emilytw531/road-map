@@ -11,4 +11,5 @@ dependencies:
     - geos
     - pyproj==3.0.1
     - pyshp==2.1.3
-    - 'https://github.com/matplotlib/basemap/archive/master.zip'
+    - basemap
+    

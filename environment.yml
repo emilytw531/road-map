@@ -1,7 +1,6 @@
 name: example-environment
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python
   - matplotlib=3.4.2
@@ -10,6 +9,6 @@ dependencies:
   - pip:
     - geos
     - pyproj==3.0.1
-    - pyshp==2.1.3
-    - basemap
+    - pyshp==2.1.3 
+  - basemap
     

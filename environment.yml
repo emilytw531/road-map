@@ -23,5 +23,4 @@ dependencies:
   - basemap-data-hires
   - geos=3.6.2
   - proj=7.2.1
-  - gdal=2.4.4
     

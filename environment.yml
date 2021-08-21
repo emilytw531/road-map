@@ -13,7 +13,6 @@ dependencies:
     - fiona==1.8.18
     - shapely==1.7.1
     - rtree==0.9.7
-    - geopy==1.22.0
     - pyproj==3.0.1
     - networkx==2.3
     - seaborn==0.11.2

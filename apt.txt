@@ -1,3 +1,0 @@
-libgeos-3.3.3
-libgeos-c1
-libgeos-dev

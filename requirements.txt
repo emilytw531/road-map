@@ -8,3 +8,5 @@ pyproj==3.0.1
 matplotlib==3.4.2
 networkx==2.3
 seaborn==0.11.2
+plotly==4.14.3
+mpl_toolkits.basemap==1.2.2+dev

@@ -44,14 +44,14 @@ def read_csv(filename):
     # print(df.shape)
     df.head()
 
-#     epsg_in = 'epsg:3857'
-#     epsg_out = 'epsg:4326'
-#     inProj = Proj(init = epsg_in) 
-#     outProj = Proj(init= epsg_out)
-#     df['long'], df['lat'] = transform(inProj, outProj, df['x'].tolist(), df['y'].tolist())
+    epsg_in = 'epsg:3857'
+    epsg_out = 'epsg:4326'
+    inProj = Proj(init = epsg_in) 
+    outProj = Proj(init= epsg_out)
+    df['long'], df['lat'] = transform(inProj, outProj, df['x'].tolist(), df['y'].tolist())
 
-    df = df.rename(columns = {'X':'long',
-                              'Y':'lat'})
+#     df = df.rename(columns = {'X':'long',
+#                               'Y':'lat'})
 
     df = df.round({'Shape_Leng': 5, 'distance': 5}) #otherwise, distance can't fully == Shape_Leng
     #df
@@ -143,6 +143,7 @@ def flow_map(title,subtitle,
             lat_ts=df_name['lat'].mean(),
             suppress_ticks=True)
    
+    #m.readshapefile(r'cambridge planning/roadnew', 'roads', drawbounds=True, linewidth=0.3, color='#4C4C4C', zorder=0)
     m.readshapefile(r'gadm36_GBR_shp/gadm36_GBR_3', 'states', drawbounds=True, linewidth=0.3, color='#4C4C4C', zorder=0)
     #m.arcgisimage(service=service, xpixels = 1500, verbose= False)
 

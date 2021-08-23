@@ -89,9 +89,10 @@ def read_shp(filename):
 # In[4]:
 
 
-def flow_map(title,subtitle,
-             cutoff1,cutoff2,cutoff3,cutoff4,cutoff5,
-             color1,color2,color3,color4,color5):
+def flow_map(title,date,time,vehicle,location):
+    
+#              cutoff1,cutoff2,cutoff3,cutoff4,cutoff5,
+#              color1,color2,color3,color4,color5
     
 #     global df
 
@@ -105,16 +106,18 @@ def flow_map(title,subtitle,
 #     title = 'Cambridge Flow Map'
 #     subtitle = 'No. of commuters by mode - xxx in year xxx'
 
-#     cutoff1 = 0
-#     cutoff2 = 1
-#     cutoff3 = 100
-#     cutoff4 = 2000
-#     cutoff5 = 5000
-#     color1 = 'lightgreen'
-#     color2 = 'dodgerblue'
-#     color3 = 'khaki'
-#     color4 = 'orange'
-#     color5 = 'orangered'
+    subtitle = location+' '+date+' '+time +' '+vehicle
+
+    cutoff1 = 0
+    cutoff2 = 1
+    cutoff3 = 100
+    cutoff4 = 2000
+    cutoff5 = 5000
+    color1 = 'lightgreen'
+    color2 = 'dodgerblue'
+    color3 = 'khaki'
+    color4 = 'orange'
+    color5 = 'orangered'
 
     annotate1 = 'Cambridge'
     dpi = 300
@@ -234,9 +237,10 @@ def flow_map(title,subtitle,
 # In[5]:
 
 
-def flow_map1(title,subtitle,
-             cutoff1,cutoff2,cutoff3,cutoff4,cutoff5,
-             color1,color2,color3,color4,color5):
+def flow_map1(title,date,time,vehicle,location):
+    
+#              cutoff1,cutoff2,cutoff3,cutoff4,cutoff5,
+#              color1,color2,color3,color4,color5
     
 #     global df
 
@@ -250,16 +254,18 @@ def flow_map1(title,subtitle,
 #     title = 'Cambridge Flow Map'
 #     subtitle = 'No. of commuters by mode - xxx in year xxx'
 
-#     cutoff1 = 0
-#     cutoff2 = 1
-#     cutoff3 = 100
-#     cutoff4 = 2000
-#     cutoff5 = 5000
-#     color1 = 'lightgreen'
-#     color2 = 'dodgerblue'
-#     color3 = 'khaki'
-#     color4 = 'orange'
-#     color5 = 'orangered'
+    subtitle = location+' '+date+' '+time +' '+vehicle
+
+    cutoff1 = 0
+    cutoff2 = 1
+    cutoff3 = 100
+    cutoff4 = 2000
+    cutoff5 = 5000
+    color1 = 'lightgreen'
+    color2 = 'dodgerblue'
+    color3 = 'khaki'
+    color4 = 'orange'
+    color5 = 'orangered'
 
     annotate1 = 'Cambridge'
     dpi = 300

@@ -186,8 +186,8 @@ def flow_map(file,title,datetime,vehicle,location,legend_title):
     legend3 = mpatches.Patch(color=color3, label='%.0f - %.0f'%(cutoff3,cutoff4))
     legend4 = mpatches.Patch(color=color4, label='%.0f - %.0f'%(cutoff4,cutoff5))
     legend5 = mpatches.Patch(color=color5, label='> %.0f'%(cutoff5))
-    plt.legend(handles=[legend1,legend2,legend3,legend4,legend5], title=legend_title,title_fontsize=6.5,
-               loc = 'lower left',prop={'size':6},markerscale=0.9)
+    plt.legend(handles=[legend1,legend2,legend3,legend4,legend5], title=legend_title,#fontsize=6, #title_fontsize=6.5,
+               loc = 'lower left',prop={'size':7},handleheight=0.5) #markerscale=0.9,
     
     
     mx1, my1 = m(df1['X'].values, df1['Y'].values)
@@ -348,7 +348,7 @@ def flow_map1(title,datetime,vehicle,location,legend_title):
     #m.drawcoastlines(linewidth=0.5)      #not work in Binder - but no difference, just dropped this line
     m.fillcontinents(alpha = 0.05,zorder=0)
 
-    plt.legend(loc = 'lower right',prop={'size':7}, title=legend_title,title_fontsize=7.5,)
+    plt.legend(loc = 'lower right',prop={'size':7}, title=legend_title) #,title_fontsize=7.5
 
     # text = plt.annotate(annotate1, m((df_name['long'].mean()),(df_name['lat'].mean())), color='#232323', 
     #                     fontsize=10, fontname='Arial', ha='center', va='center') 
